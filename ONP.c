@@ -62,6 +62,8 @@ void main()
 						r++;
 						s--;
 					}
+				else
+					s++;
 				continue;
 			}
 			if(stack[s]=='*'||stack[s]=='/')
@@ -73,7 +75,9 @@ void main()
 						r++;
 						s--;
 					}
-					continue;
+				else
+					s++;
+				continue;
 			}
 			s++;
 		}
